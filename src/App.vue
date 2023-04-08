@@ -1,6 +1,8 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import MyQRCode from './components/MakeQR.vue'
+
 </script>
 
 <template>
@@ -9,13 +11,15 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="Hello!" />
-
+      
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <MyQRCode></MyQRCode>
       </nav>
     </div>
   </header>
+  
 
   <RouterView />
 </template>
